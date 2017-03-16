@@ -1,122 +1,122 @@
 {
-   "name": "base",
-   "description": "Base role",
-   "json_class": "Chef::Role",
-   "default_attributes": {
-      "authorization": {
-         "sudo": {
-            "groups": [
-               "sysadmin"
-            ],
-            "users": [
-               "deployer"
-            ],
-            "passwordless": "false"
-         }
-      },
-      "users": [
-         "deployer"
-      ],
-      "nodejs": {
-         "version": "0.12.18",
-         "install_method": "package"
-      },
-      "rvm": {
-         "user_installs": [
-            {
-               "user": "deployer",
-               "default_ruby": "2.3.3",
-               "rubies": [
-                  "2.3.3"
-               ]
-            }
-         ]
-      },
-      "postgresql": {
-        "version": "9.5",
-        "enable_pgdg_apt": true,
-        "use_pgdg_packages": true,
-        "dir": "/etc/postgresql/9.5/main",
-        "client": {
-          "packages": ["postgresql-client-9.5", "libpq-dev"]
-        },
-        "server": {
-          "packages": ["postgresql-9.5"]
-        },
-        "contrib": {
-          "packages": ["postgresql-contrib-9.5"]
-        },
-        "password": {
-          "postgres": "md5d3e53d5343e48b44658fcf40e78de827"
-        }
-      },
-      "firewall": {
-         "rules": [
-            {
-               "http": {
-                  "port": "80",
-                  "protocol": "tcp"
-               },
-               "monit": {
-                  "port": "2812",
-                  "protocol": "tcp"
-               },
-               "redis": {
-                  "port": "6379",
-                  "protocol": "tcp"
-               }
-            }
-         ]
-      },
-      "monit": {
-         "mail_alerts": false,
-         "web_interface": {
-            "enable": true,
-            "port": 2812,
-            "address": false,
-            "allow": [
-               "admin:2rG8b99N"
-            ]
-         }
-      },
-      "nginx": {
-         "version": "1.11.10",
-         "default_site_enabled": false,
-         "source": {
-            "modules": [
-               "nginx::http_gzip_static_module",
-               "nginx::http_ssl_module",
-               "nginx::http_v2_module"
-            ],
-            "checksum": "778b3cabb07633f754cd9dee32fc8e22582bce22bfa407be76a806abd935533d"
-         }
-      },
-      "openssh": {
-         "server": {
-            "allow_agent_forwarding": "yes",
-            "allow_tcp_forwarding": "no",
-            "login_grace_time": "30s",
-            "password_authentication": "no",
-            "permit_root_login": "no",
-            "rsa_authentication": "no"
-         }
+  "name": "base",
+  "description": "Base role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "authorization": {
+      "sudo": {
+        "groups": [
+          "sysadmin"
+        ],
+        "users": [
+          "deployer"
+        ],
+        "passwordless": "false"
       }
-   },
-   "run_list": [
-      "recipe[chef-solo-search]",
-      "recipe[users::sysadmins]",
-      "recipe[sudo]",
-      "recipe[openssh]",
-      "recipe[firewall::default]",
-      "recipe[ufw]",
-      "recipe[nginx::source]",
-      "recipe[postgresql::server]",
-      "recipe[rvm::user]",
-      "recipe[nodejs]",
-      "recipe[apt-packages]",
-      "recipe[monit]",
-      "recipe[redisio]",
-      "recipe[redisio::enable]",
-      "recipe[ncdu]"
-   ]
+    },
+    "users": [
+      "deployer"
+    ],
+    "nodejs": {
+      "version": "0.12.18",
+       "install_method": "package"
+    },
+    "rvm": {
+      "user_installs": [
+        {
+          "user": "deployer",
+          "default_ruby": "2.3.3",
+          "rubies": [
+            "2.3.3"
+          ]
+        }
+      ]
+    },
+    "postgresql": {
+      "version": "9.5",
+      "enable_pgdg_apt": true,
+      "use_pgdg_packages": true,
+      "dir": "/etc/postgresql/9.5/main",
+      "client": {
+        "packages": ["postgresql-client-9.5", "libpq-dev"]
+      },
+      "server": {
+        "packages": ["postgresql-9.5"]
+      },
+      "contrib": {
+        "packages": ["postgresql-contrib-9.5"]
+      },
+      "password": {
+        "postgres": "md5d3e53d5343e48b44658fcf40e78de827"
+      }
+    },
+    "firewall": {
+      "rules": [
+        {
+          "http": {
+            "port": "80",
+            "protocol": "tcp"
+          },
+          "monit": {
+            "port": "2812",
+            "protocol": "tcp"
+          },
+          "redis": {
+            "port": "6379",
+            "protocol": "tcp"
+          }
+        }
+      ]
+    },
+    "monit": {
+      "mail_alerts": false,
+      "web_interface": {
+        "enable": true,
+        "port": 2812,
+        "address": false,
+        "allow": [
+          "admin:2rG8b99N"
+        ]
+      }
+    },
+    "nginx": {
+      "version": "1.11.10",
+      "default_site_enabled": false,
+      "source": {
+        "modules": [
+          "nginx::http_gzip_static_module",
+          "nginx::http_ssl_module",
+          "nginx::http_v2_module"
+        ],
+        "checksum": "778b3cabb07633f754cd9dee32fc8e22582bce22bfa407be76a806abd935533d"
+      }
+    },
+    "openssh": {
+      "server": {
+        "allow_agent_forwarding": "yes",
+        "allow_tcp_forwarding": "no",
+        "login_grace_time": "30s",
+        "password_authentication": "no",
+        "permit_root_login": "no",
+        "rsa_authentication": "no"
+      }
+    }
+  },
+  "run_list": [
+    "recipe[chef-solo-search]",
+    "recipe[users::sysadmins]",
+    "recipe[sudo]",
+    "recipe[openssh]",
+    "recipe[firewall::default]",
+    "recipe[ufw]",
+    "recipe[nginx::source]",
+    "recipe[postgresql::server]",
+    "recipe[rvm::user]",
+    "recipe[nodejs]",
+    "recipe[apt-packages]",
+    "recipe[monit]",
+    "recipe[redisio]",
+    "recipe[redisio::enable]",
+    "recipe[ncdu]"
+  ]
 }
