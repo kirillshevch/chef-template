@@ -1,0 +1,9 @@
+{
+  "id": "deployer",
+  "password": "$1$rB4gn6E8$7V4WSAxc5TnBW210tarSX.",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDu4L3Qmq+cs/HUEBNhIigZQBWl94XZldQHNJiTKLYF5bVFuzutwo9qR8anm0L0zMheC/Vjxl2vlmZgqWZmd4u+KeFKg0a4Tqv6AUEsNBXURdqBsA1B7yKfUspVHAEcZRw39i8F79e1yQD9mpqOzKNFokyCNcTjntrxajfouDnjucHucrjLLv3OtjpqTB2mcLYOlT9bS2Sph3GFxt4DWbxL9S1g3+hvU3rCKI7QfPwS2ip7uKCtZzSAesDc/KWe/nvWbo08q9eGOig+3MlprGByLxAC2NtDpnrxWCFamr2kJGVLZEtS/a6NOFMwjlpXbsvqnZAVaQrO9gHIf+xQTBvK8F9FTMvaF9LlFcxcYX2DcJjqwoPPild4vYtuPAEQCUFn/CY0ouFKT6Ta51peh38EWmq1CZaqRfyX6eOxLzhK+Vrq20OtaxC6RqflAnQIDN4eQJ/YvgIgC1b3wLezTV6lc0uCytl/JtwVbDKyAxXtwGZjmuUxxBnQWLH6CsUKJITdpBZxATUURdseGF7EUKxbptPi98DnGGxJUw7/6hgD7klZcXQHjH0Zxn4UA7mkqMtSAeiMuj05K3RqafIDcCJe/iaLd9jju+xlxUd5jGnf5O5+dFYDVNvLlQ9sulAgFaO8LiDhR35q9an+Zql1UxxUFhp/QojgtzxvQ5TNToVBew== kirills167@gmail.com"
+  ],
+  "groups": ["www-data", "sudo", "rvm", "sysadmin"],
+  "shell": "\/bin\/bash"
+}

@@ -1,0 +1,98 @@
+DEPENDENCIES
+  chef-solo-search
+  monit
+    git: https://github.com/phlipper/chef-monit.git
+    revision: f027aea655a0ef2ea6d0b7bdde00975268a82ef9
+  ncdu
+  nginx
+    git: https://github.com/kirillweb/nginx.git
+    revision: 5d0905afafa4536a30d5bc715fd0b0e0de6d2b65
+    ref: 2.7.7
+  nodejs
+  openssh
+  postgresql
+  redisio
+    git: https://github.com/yakara-ltd/redisio.git
+    revision: 1780bd270036092103ddd03c8e2d7bfd7baf061f
+    ref: systemd
+  runit
+  rvm
+    git: https://github.com/martinisoft/chef-rvm.git
+    revision: 9ab5f8fffe6bd18625347cfa760bd645a562e01b
+    ref: v0.9.4
+  sudo
+  ufw
+  users
+
+GRAPH
+  apt (6.0.1)
+  ark (2.2.1)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  bluepill (4.0.0)
+    rsyslog (>= 2.0)
+  build-essential (8.0.0)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  chef-solo-search (0.5.1)
+  chef-sugar (3.4.0)
+  chef_gem (0.1.0)
+  compat_resource (12.16.3)
+  firewall (2.5.4)
+    chef-sugar (>= 0.0.0)
+  homebrew (3.0.0)
+  iptables (4.0.0)
+  java (1.47.0)
+    apt (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    windows (>= 0.0.0)
+  mingw (2.0.0)
+    seven_zip (>= 0.0.0)
+  monit (1.5.4)
+    build-essential (>= 0.0.0)
+  ncdu (1.0.0)
+  nginx (2.8.0)
+    apt (>= 0.0.0)
+    bluepill (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    ohai (< 4.0.0)
+    runit (>= 1.6.0)
+    yum (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  nodejs (3.0.0)
+    apt (>= 2.9.1)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  ohai (3.0.1)
+  openssh (2.1.1)
+    iptables (>= 1.0)
+  openssl (7.0.0)
+  packagecloud (0.3.0)
+  postgresql (6.1.1)
+    build-essential (>= 2.0.0)
+    compat_resource (>= 12.16.3)
+    openssl (>= 4.0)
+  redisio (2.5.0)
+    build-essential (>= 0.0.0)
+    ulimit (>= 0.1.2)
+  rsyslog (6.0.1)
+  runit (3.0.5)
+    packagecloud (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  rvm (0.9.4)
+    chef_gem (>= 0.0.0)
+    java (>= 0.0.0)
+  seven_zip (2.0.2)
+    windows (>= 1.2.2)
+  sudo (3.3.1)
+  ufw (3.1.0)
+    firewall (>= 2.0)
+  ulimit (0.4.0)
+  users (4.0.3)
+  windows (2.0.2)
+  yum (5.0.0)
+  yum-epel (2.1.1)
+    compat_resource (>= 12.16.3)

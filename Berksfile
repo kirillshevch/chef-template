@@ -1,0 +1,16 @@
+source 'https://supermarket.chef.io'
+
+cookbook 'chef-solo-search'
+cookbook 'runit'
+cookbook 'users'
+cookbook 'sudo'
+cookbook 'openssh'
+cookbook 'ufw'
+cookbook 'nodejs'
+cookbook 'ncdu'
+cookbook 'postgresql'
+
+cookbook 'monit',        github: 'phlipper/chef-monit'
+cookbook 'rvm',          github: 'martinisoft/chef-rvm', ref: 'v0.9.4'
+cookbook 'nginx',        github: 'kirillweb/nginx', ref: '2.7.7'
+cookbook 'redisio',      github: 'yakara-ltd/redisio', ref: 'systemd'

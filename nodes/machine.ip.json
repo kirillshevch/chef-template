@@ -1,0 +1,11 @@
+{
+  "run_list": [
+    "role[base]",
+    "recipe[chef-nginx::production]",
+    "recipe[chef-monit::production]"
+  ],
+
+  "automatic": {
+    "ipaddress": "MACHINE_IP"
+  }
+}
