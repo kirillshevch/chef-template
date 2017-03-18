@@ -47,7 +47,7 @@
         "packages": ["postgresql-contrib-9.5"]
       },
       "password": {
-        "postgres": "md5d3e53d5343e48b44658fcf40e78de827"
+        "postgres": "$1$CU63hQbB$r7Ixz58Q4vbgnwgf003fi."
       }
     },
     "firewall": {
