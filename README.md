@@ -26,7 +26,7 @@ Insert machine IP into next files:
 cp nodes/machine.ip.json nodes/my_new_node.json
 ```
 
-Replace passwords into base [role](https://github.com/kirillweb/chef-template/blob/master/roles/base.json)
+Replace passwords into base [role](https://github.com/kirillweb/chef-template/blob/master/roles/base.json) and run:
 
 ```bash
 bundle exec knife solo bootstrap root@ip nodes/my_new_node.json
