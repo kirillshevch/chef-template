@@ -2,7 +2,7 @@
 
 Chef Solo config for management servers with Ruby/Rack based applications
 
-**Stack**
+## Stack
 * Ubuntu 16.04
 * PostgreSQL
 * Redis
