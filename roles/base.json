@@ -48,6 +48,7 @@
       },
       "password": {
         "postgres": "$1$CU63hQbB$r7Ixz58Q4vbgnwgf003fi."
+
       },
       "users": [
         {
