@@ -11,6 +11,8 @@ DEPENDENCIES
   nodejs
   openssh
   postgresql
+    git: https://github.com/kirillweb/postgresql.git
+    revision: fce4edddc74d3ae8f07903120c3539097885e021
   redisio
     git: https://github.com/yakara-ltd/redisio.git
     revision: 1780bd270036092103ddd03c8e2d7bfd7baf061f
@@ -69,12 +71,12 @@ GRAPH
   ohai (3.0.1)
   openssh (2.1.1)
     iptables (>= 1.0)
-  openssl (7.0.0)
+  openssl (7.0.1)
   packagecloud (0.3.0)
   postgresql (6.1.1)
     build-essential (>= 2.0.0)
     compat_resource (>= 12.16.3)
-    openssl (>= 4.0)
+    openssl (>= 4.0.0)
   redisio (2.5.0)
     build-essential (>= 0.0.0)
     ulimit (>= 0.1.2)

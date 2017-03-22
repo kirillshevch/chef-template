@@ -48,13 +48,31 @@
       },
       "password": {
         "postgres": "$1$CU63hQbB$r7Ixz58Q4vbgnwgf003fi."
-      }
+
+      },
+      "users": [
+        {
+          "username": "deployer",
+          "password": "$1$ut5HY53S$yMVOzameTGPNrlg1w7dsv.",
+          "superuser": true,
+          "replication": false,
+          "createdb": true,
+          "createrole": false,
+          "inherit": true,
+          "replication": false,
+          "login": true
+        }
+      ]
     },
     "firewall": {
       "rules": [
         {
           "http": {
             "port": "80",
+            "protocol": "tcp"
+          },
+          "https": {
+            "port": "443",
             "protocol": "tcp"
           },
           "monit": {
@@ -110,7 +128,9 @@
     "recipe[firewall::default]",
     "recipe[ufw]",
     "recipe[nginx::source]",
+    "recipe[postgresql::client]",
     "recipe[postgresql::server]",
+    "recipe[postgresql::setup_users]",
     "recipe[rvm::user]",
     "recipe[nodejs]",
     "recipe[apt-packages]",
