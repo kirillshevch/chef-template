@@ -1,5 +1,4 @@
 DEPENDENCIES
-  chef-solo-search
   monit
     git: https://github.com/phlipper/chef-monit.git
     revision: f027aea655a0ef2ea6d0b7bdde00975268a82ef9
@@ -37,7 +36,6 @@ GRAPH
   build-essential (8.0.0)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef-solo-search (0.5.1)
   chef-sugar (3.4.0)
   chef_gem (0.1.0)
   compat_resource (12.16.3)
