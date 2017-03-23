@@ -1,6 +1,5 @@
 source 'https://supermarket.chef.io'
 
-cookbook 'chef-solo-search'
 cookbook 'runit'
 cookbook 'users'
 cookbook 'sudo'
