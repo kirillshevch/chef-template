@@ -22,6 +22,7 @@ DEPENDENCIES
     revision: 9ab5f8fffe6bd18625347cfa760bd645a562e01b
     ref: v0.9.4
   sudo
+  swap_tuning
   ufw
   users
 
@@ -88,6 +89,9 @@ GRAPH
   seven_zip (2.0.2)
     windows (>= 1.2.2)
   sudo (3.3.1)
+  swap (0.3.8)
+  swap_tuning (0.2.0)
+    swap (~> 0.3)
   ufw (3.1.0)
     firewall (>= 2.0)
   ulimit (0.4.0)

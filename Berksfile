@@ -7,6 +7,7 @@ cookbook 'openssh'
 cookbook 'ufw'
 cookbook 'nodejs'
 cookbook 'ncdu'
+cookbook 'swap_tuning'
 
 cookbook 'postgresql',   github: 'kirillshevch/postgresql'
 cookbook 'nginx',        github: 'kirillshevch/nginx', ref: '2.7.7'

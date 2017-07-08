@@ -97,6 +97,9 @@
         ]
       }
     },
+    "swap_tuning": {
+      "minimum_size": 1024
+    },
     "nginx": {
       "version": "1.11.10",
       "default_site_enabled": false,
@@ -137,6 +140,7 @@
     "recipe[monit]",
     "recipe[redisio]",
     "recipe[redisio::enable]",
-    "recipe[ncdu]"
+    "recipe[ncdu]",
+    "recipe[swap_tuning]"
   ]
 }
