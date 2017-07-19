@@ -13,9 +13,9 @@ DEPENDENCIES
     git: https://github.com/kirillweb/postgresql.git
     revision: fce4edddc74d3ae8f07903120c3539097885e021
   redisio
-    git: https://github.com/yakara-ltd/redisio.git
-    revision: 1780bd270036092103ddd03c8e2d7bfd7baf061f
-    ref: systemd
+    git: https://github.com/brianbianco/redisio.git
+    revision: 222e4d48eff9a38e3fddbcd07734aa6c05b4665d
+    ref: v2.6.1
   runit
   rvm
     git: https://github.com/martinisoft/chef-rvm.git
@@ -76,8 +76,9 @@ GRAPH
     build-essential (>= 2.0.0)
     compat_resource (>= 12.16.3)
     openssl (>= 4.0.0)
-  redisio (2.5.0)
+  redisio (2.6.1)
     build-essential (>= 0.0.0)
+    selinux_policy (>= 0.0.0)
     ulimit (>= 0.1.2)
   rsyslog (6.0.1)
   runit (3.0.5)
@@ -86,6 +87,8 @@ GRAPH
   rvm (0.9.4)
     chef_gem (>= 0.0.0)
     java (>= 0.0.0)
+  selinux_policy (2.0.1)
+    compat_resource (>= 12.16.3)
   seven_zip (2.0.2)
     windows (>= 1.2.2)
   sudo (3.3.1)
