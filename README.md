@@ -35,3 +35,7 @@ Replace passwords into base [role](https://github.com/kirillweb/chef-template/bl
 ```bash
 bundle exec knife solo bootstrap root@ip nodes/my_new_node.json
 ```
+
+## License
+
+The template is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
