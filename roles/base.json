@@ -38,6 +38,10 @@
         }
       ]
     },
+    "redisio": {
+      "safe_install": false,
+      "version": "4.0.1"
+    },
     "postgresql": {
       "version": "9.5",
       "enable_pgdg_apt": true,
