@@ -16,6 +16,9 @@ server {
   server_name MACHINE_IP;
   root /home/deployer/www/project/current/public;
 
+  access_log off;
+  error_log /var/log/nginx/error.log crit;
+
   location ~*  \.(jpg|jpeg|png|gif|ico|css|js)$ {
     expires 365d;
   }
